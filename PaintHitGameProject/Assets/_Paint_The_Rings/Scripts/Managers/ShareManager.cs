@@ -9,7 +9,8 @@ namespace OnefallGames
         [Header("Native Sharing Config")]
         [SerializeField] private string shareText = "Can you beat my score!!!";
         [SerializeField] private string shareSubject = "Share With";
-        [SerializeField] private string appUrl = "https://play.google.com/store/apps/details?id=com.BrightFuture.KnifeShooter";
+        [SerializeField] private string appUrl = "https://google.com";
+        
 
         public string AppUrl { get { return appUrl; } }
         public string ScreenshotFilePath { get { return Path.Combine(Application.temporaryCachePath, "Screenshot.png"); } }

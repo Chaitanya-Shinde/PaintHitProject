@@ -175,7 +175,7 @@ namespace OnefallGames
             if (IsRevived)
             {
                 ResumeBackgroundMusic(0.5f);
-                StartCoroutine(CRDecreasingTimeToCompleteLevel());
+                //StartCoroutine(CRDecreasingTimeToCompleteLevel());
                 rotatorController.StopRotate(false);
                 listBallController[0].transform.position = new Vector3(0, 0, -10);
                 listBallController[0].gameObject.SetActive(true);
@@ -184,7 +184,7 @@ namespace OnefallGames
             else
             {
                 PlayBackgroundMusic(0.5f);
-                StartCoroutine(CRDecreasingTimeToCompleteLevel());
+                //StartCoroutine(CRDecreasingTimeToCompleteLevel());
                 StartCoroutine(CRCreatingNextRingAndBalls());
             }
         }
