@@ -16,9 +16,9 @@ namespace OnefallGames
         [SerializeField] private Text currentLevelTxt = null;
         public void OnShow()
         {
-            ViewManager.Instance.MoveRect(topBarTrans, topBarTrans.anchoredPosition, new Vector2(topBarTrans.anchoredPosition.x, 0f), 0.75f);
+            //ViewManager.Instance.MoveRect(topBarTrans, topBarTrans.anchoredPosition, new Vector2(topBarTrans.anchoredPosition.x, 0f), 0.75f);
             ViewManager.Instance.ScaleRect(replayBtnTrans, Vector2.zero, Vector2.one, 0.75f);
-            ViewManager.Instance.MoveRect(bottomBarTrans, bottomBarTrans.anchoredPosition, new Vector2(bottomBarTrans.anchoredPosition.x, 150f), 0.75f);
+            //ViewManager.Instance.MoveRect(bottomBarTrans, bottomBarTrans.anchoredPosition, new Vector2(bottomBarTrans.anchoredPosition.x, 150f), 0.75f);
             ViewManager.Instance.ScaleRect(levelResultPanelTrans, Vector2.zero, Vector2.one, 0.75f);
 
             currentLevelTxt.text = "Next Level: " + PlayerPrefs.GetInt(PlayerPrefsKeys.PPK_SAVED_LEVEL).ToString();
@@ -36,8 +36,8 @@ namespace OnefallGames
 
         private void OnDisable()
         {
-            topBarTrans.anchoredPosition = new Vector2(topBarTrans.anchoredPosition.x, 100);
-            bottomBarTrans.anchoredPosition = new Vector2(bottomBarTrans.anchoredPosition.x, -200);
+            //topBarTrans.anchoredPosition = new Vector2(topBarTrans.anchoredPosition.x, 100);
+            //bottomBarTrans.anchoredPosition = new Vector2(bottomBarTrans.anchoredPosition.x, -200);
             replayBtnTrans.localScale = Vector2.zero;
             levelResultPanelTrans.localScale = Vector2.zero;
         }

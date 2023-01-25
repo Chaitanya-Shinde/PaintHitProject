@@ -13,6 +13,9 @@ EditorBuildSettings:
     guid: 4de977dd97d8f094fadc48f7a02d5ed6
   - enabled: 1
     path: Assets/_Paint_The_Rings/Scenes/Ingame.unity
+    guid: d5ebff459e39a8a4f8a3b183393f841f
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
     path: 

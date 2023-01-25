@@ -25,8 +25,8 @@ namespace OnefallGames
         private int settingButtonTurn = 1;
         public void OnShow()
         {
-            ViewManager.Instance.MoveRect(topBarTrans, topBarTrans.anchoredPosition, new Vector2(topBarTrans.anchoredPosition.x, 0f), 0.75f);
-            ViewManager.Instance.MoveRect(bottomBarTrans, bottomBarTrans.anchoredPosition, new Vector2(bottomBarTrans.anchoredPosition.x, 150f), 0.75f);
+            //ViewManager.Instance.MoveRect(topBarTrans, topBarTrans.anchoredPosition, new Vector2(topBarTrans.anchoredPosition.x, 0f), 0.75f);
+            //ViewManager.Instance.MoveRect(bottomBarTrans, bottomBarTrans.anchoredPosition, new Vector2(bottomBarTrans.anchoredPosition.x, 150f), 0.75f);
             ViewManager.Instance.ScaleRect(gameNameTrans, Vector2.zero, Vector2.one, 0.75f);
             ViewManager.Instance.ScaleRect(playBtnTrans, Vector2.zero, Vector2.one, 0.75f);
 
@@ -61,9 +61,9 @@ namespace OnefallGames
 
         private void OnDisable()
         {
-            topBarTrans.anchoredPosition = new Vector2(topBarTrans.anchoredPosition.x, 100f);
+            //topBarTrans.anchoredPosition = new Vector2(topBarTrans.anchoredPosition.x, 100f);
             playBtnTrans.localScale = Vector2.zero;
-            bottomBarTrans.anchoredPosition = new Vector2(bottomBarTrans.anchoredPosition.x, -200f);
+            //bottomBarTrans.anchoredPosition = new Vector2(bottomBarTrans.anchoredPosition.x, -200f);
         }
 
 

@@ -112,8 +112,8 @@ namespace OnefallGames
                     //Setup parameters
                     currentLevelConfig = levelConfigs;
                     backgroundMusic = levelConfigs.BackgroundMusicClip;
-                    backgroundMaterial.SetColor("_TopColor", currentLevelConfig.BackgroundTopColor);
-                    backgroundMaterial.SetColor("_BottomColor", currentLevelConfig.BackgroundBottomColor);
+                    //backgroundMaterial.SetColor("_TopColor", currentLevelConfig.BackgroundTopColor);
+                    //backgroundMaterial.SetColor("_BottomColor", currentLevelConfig.BackgroundBottomColor);
                     normalRingPieceMaterial.color = levelConfigs.NormalRingPieceColor;
                     timeToCompleteLevel = Random.Range(currentLevelConfig.MinTimeToCompleteLevel, currentLevelConfig.MaxTimeToCompleteLevel);
 
